@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx" alignment="CENTER"
+          xmlns:fx="http://javafx.com/fxml" hgap="10" vgap="10"
+          fx:controller="pl.edu.wat.wcy.isi.siecsilowni.controllers.CreatorsController"
+          AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0"
+          styleClass="creatorTheme">
+
+    <padding>
+        <Insets top="25" right="25" bottom="10" left="25"/>
+    </padding>
+
+    <Label text="%creators.author" styleClass="text-fill" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Label fx:id="author" styleClass="text-fill" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="%creators.organization" styleClass="text-fill" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Label fx:id="organization" styleClass="text-fill" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="%creators.version" styleClass="text-fill" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <Label fx:id="version" styleClass="text-fill" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+</GridPane>

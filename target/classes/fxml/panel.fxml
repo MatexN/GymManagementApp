@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="600.0" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pl.edu.wat.wcy.isi.siecsilowni.controllers.GymAppController">
+    <MenuBar styleClass="panel-menu-button" VBox.vgrow="NEVER">
+
+        <Menu mnemonicParsing="false" text="%panel.gym">
+            <MenuItem styleClass="panel-menu-panel_1" mnemonicParsing="false" onAction="#manageGyms" text="%panel.manage"/>
+        </Menu>
+
+        <Menu mnemonicParsing="false" text="%panel.clients">
+            <MenuItem styleClass="panel-menu-panel_1" mnemonicParsing="false" onAction="#manageClients" text="%panel.manage"/>
+            <MenuItem styleClass="panel-menu-panel_1" mnemonicParsing="false" onAction="#searchClient" text="%panel.findClient"/>
+        </Menu>
+
+        <Menu mnemonicParsing="false" text="%panel.settings">
+            <Menu styleClass="panel-menu-panel_1" mnemonicParsing="false" text="%panel.theme">
+                <MenuItem styleClass="panel-menu-style_1" mnemonicParsing="false" onAction="#changeStyle" userData="/css/style1.css" text="%panel.theme1"/>
+                <MenuItem styleClass="panel-menu-style_2" mnemonicParsing="false" onAction="#changeStyle" userData="/css/style2.css" text="%panel.theme2"/>
+                <MenuItem styleClass="panel-menu-style_3" mnemonicParsing="false" onAction="#changeStyle" userData="/css/style3.css" text="%panel.theme3"/>
+            </Menu>
+        </Menu>
+
+        <Menu mnemonicParsing="false" text="%panel.info">
+            <MenuItem styleClass="panel-menu-panel_1" mnemonicParsing="false" onAction="#showCreators" text="%panel.creators"/>
+        </Menu>
+
+    </MenuBar>
+    <AnchorPane styleClass="panel-background" VBox.vgrow="ALWAYS">
+        <children>
+            <AnchorPane fx:id="root" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        AnchorPane.topAnchor="0">
+                <Label styleClass="text-fill" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0"
+                       AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0"
+                       text="%panel.welcomeText" alignment="CENTER"/>
+            </AnchorPane>
+
+            <MenuButton fx:id="userStatus" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT"
+                        AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#signOut" text="%panel.logout"/>
+                </items>
+            </MenuButton>
+        </children>
+    </AnchorPane>
+</VBox>

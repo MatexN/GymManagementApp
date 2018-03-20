@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jdbc:h2:file:~/h2_I5B4S1;MVCC=true;">
+  <database-model serializer="dbm" rdbms="H2" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="H2_I5B4S1">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="5" parent="4" name="CLIENT"/>
+    <table id="6" parent="4" name="GYM"/>
+    <table id="7" parent="4" name="USER"/>
+    <column id="8" parent="5" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_1622CFFE_2734_466E_B24F_5659D4E2174B)</DefaultExpression>
+    </column>
+    <column id="9" parent="5" name="AMOUNTOFDAYS">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="10" parent="5" name="FIRSTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="11" parent="5" name="PESEL">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="12" parent="5" name="SECONDNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="13" parent="5" name="SUBSCRIPTIONCARDSTARTDATE">
+      <Position>6</Position>
+      <DataType>VARBINARY(255)|-3</DataType>
+    </column>
+    <index id="14" parent="5" name="UK_DY4MMTKT7GFQNG0M4XGEWCB0X_INDEX_7">
+      <ColNames>PESEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="15" parent="5" name="CONSTRAINT_7">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="6" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_B35A3A5A_BD1C_4AE5_BD94_BC3F56D2C189)</DefaultExpression>
+    </column>
+    <column id="17" parent="6" name="ADDRESS">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="18" parent="6" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="19" parent="6" name="NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="20" parent="6" name="PHONE">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="21" parent="6" name="CONSTRAINT_1">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="7" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(19)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_DB7112D1_E254_47F5_BBAC_397B4B3C62D8)</DefaultExpression>
+    </column>
+    <column id="23" parent="7" name="PASSWORD">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="24" parent="7" name="USERNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <index id="25" parent="7" name="UK_4BAKCTVIOBMDK6DDH2NWG08C2_INDEX_2">
+      <ColNames>USERNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="7" name="CONSTRAINT_2">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

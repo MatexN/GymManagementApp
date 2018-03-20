@@ -1,0 +1,47 @@
+.login-background {
+    -fx-background-image: url('/images/login.png');
+    -fx-background-size: cover;
+}
+
+.text-fill {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+.creatorTheme {
+    -fx-background-color: rgba(9,49,69,0.8);
+}
+
+.panel-background{
+    -fx-background-color: rgba(9,49,69,0.8);
+}
+
+.panel-menu-button {
+    -fx-background-color: #00ace0;
+}
+
+.panel-menu-panel_1 .label {
+    -fx-text-fill: white;
+}
+
+.panel-menu-panel_1:focused {
+    -fx-background-color: darkgray;
+}
+
+.panel-menu-panel_1:focused .label {
+    -fx-text-fill: blue;
+}
+
+.context-menu {
+    -fx-background-color: black;
+}
+
+.panel-menu-style_1 {
+    -fx-background-color: rgb(9,49,69);
+}
+.panel-menu-style_2 {
+    -fx-background-color: rgb(154,38,23);
+}
+.panel-menu-style_3 {
+    -fx-background-color: rgb(194,87,26);
+}

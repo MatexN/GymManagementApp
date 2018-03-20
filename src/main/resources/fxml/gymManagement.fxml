@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.edu.wat.wcy.isi.siecsilowni.controllers.GymManagementController"
+            AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+    <TableView fx:id="tableView" editable="true" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="8.0"
+               AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="50.0">
+        <placeholder>
+            <Label text=""/>
+        </placeholder>
+    </TableView>
+
+    <TilePane hgap="8" prefColumns="3" tileAlignment="CENTER_RIGHT" vgap="8" AnchorPane.bottomAnchor="8.0"
+              AnchorPane.rightAnchor="8.0">
+        <Button maxWidth="Infinity" onAction="#newItem" text="%gymManagemet.new"/>
+        <Button fx:id="editItemBtn" maxWidth="Infinity" onAction="#editItem" text="%gymManagemet.editItemBtn"/>
+        <Button fx:id="removeItemBtn" maxWidth="Infinity" onAction="#removeItem" text="%gymManagemet.removeItemBtn"/>
+    </TilePane>
+</AnchorPane>
